@@ -1,4 +1,8 @@
 // Заголовки, общие БЄМ блоки и проче...
+[class*="__text"] {
+    line-height: 175%;
+}
+
 
 .main-bg {
     position: fixed;
@@ -10,13 +14,12 @@
 }
 
 
-
-
 .block-header {
     display: grid;
     justify-items: center;
     gap: 8px;
     text-transform: capitalize;
+    @extend %cuf;
     // .block-header__sub-title
     &__sub-title {
         font-weight: 700;
@@ -42,4 +45,18 @@
         letter-spacing: 0.04em;
         color: $mainYellow;
     }
+    // .block-header_big
+    &_big {
+        .block-header__title {
+            @include adaptiveValue("font-size", 90,90 );
+        }
+    }
+    // .block-header_left
+    &_left {
+        justify-items: start;
+        .block-header__sub-title {
+            justify-items: start;
+        }
+    }
 }
+

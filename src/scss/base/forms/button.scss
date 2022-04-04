@@ -2,10 +2,18 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
+	padding: 8px 32px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 175%;
+	letter-spacing: 0.04em;
+	color: $mainBlack;
+	background: $mainYellow;
+	@extend %cuf;
+
 	@media (any-hover: hover) {
 		&:hover {
+			background: red;
 		}
 	}
 	&._fw {
