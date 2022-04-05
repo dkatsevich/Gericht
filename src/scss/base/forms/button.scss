@@ -10,10 +10,11 @@
 	color: $mainBlack;
 	background: $mainYellow;
 	@extend %cuf;
+	transition: background 0.3s ease 0s;
 
 	@media (any-hover: hover) {
 		&:hover {
-			background: red;
+			background: #b8a45a;
 		}
 	}
 	&._fw {

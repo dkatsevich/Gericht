@@ -4,12 +4,15 @@
     }
 }
 .main-slider {
+    display: flex;
     @include adaptiveValue("padding-top", 190, 140);
+    padding-bottom: 72px;
     background: $mainBlack;
     // .main-slider__container
     &__container {
         // .main-slider__container_wide
         &_wide {
+            flex: 1 1 auto;
             position: relative;
         }
     }
@@ -44,14 +47,30 @@
     }
 }
 .body-main-slider {
-    // .body-main-slider__slider
-    &__slider {
-    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     // .body-main-slider__wrapper
     &__wrapper {
+        flex: 1 1 auto;
+        align-items: center;
     }
     // .body-main-slider__slide
     &__slide {
+        height: 100%;
+    }
+    // .main-slider__pagination
+    &__pagination {
+        @include adaptiveValue("padding-top", 64, 64);
+        display: flex;
+        justify-content: center;
+        @extend %cuf;
+        font-weight: 600;
+        @include adaptiveValue("font-size", 16, 16);
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        color: #F5EFDB;
+        line-height: 175%;
     }
 }
 
@@ -59,6 +78,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
     // .slide-main-slider__content
     &__content {
         display: grid;
@@ -75,13 +98,36 @@
         font-size: rem(16);
         line-height: 175%;
         letter-spacing: 0.04em;
-
     }
     // .slide-main-slider__button
     &__button {
     }
     // .slide-main-slider__img
-    &__img {
+    &__img-ibg {
+        height: 100%;
+        max-height: 736px;
+        &::before,&::after{
+            content:'';
+            width: percent(435,619);
+            height: percent(435,688);
+            position: absolute;
+            background: $mainYellow;
+        }
+        &::before{
+            left: 0;
+            bottom: 0;
+            transform: translate(-25px, 25px);
+
+        }
+        &::after{
+            right: 0;
+            top: 0;
+            transform: translate(25px, -25px);
+
+        }
+        img {
+            z-index: 2;
+        }
     }
 }
 

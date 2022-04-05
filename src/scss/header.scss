@@ -142,7 +142,11 @@
 		font-size: rem(16);
 		line-height: 175%;
 		letter-spacing: 0.04em;
-
+		@media (any-hover: hover){
+			&:hover{
+				color: $mainYellow;
+			}
+		}
 		@media (max-width:$mobile) {
 			font-size: rem(35);
 		}
@@ -199,7 +203,11 @@
 		font-size: rem(16);
 		line-height: 175%;
 		text-transform: capitalize;
-
+		@media (any-hover: hover){
+			&:hover{
+				color: $mainYellow;
+			}
+		}
 		@media (max-width: em(500)) {
 			font-size: rem(25);
 		}
