@@ -5,7 +5,10 @@
 
 
 window.addEventListener('load', (e) => {
-    document.documentElement.insertAdjacentHTML('beforeend', `<div class="main-bg"></div>`)
+    const bgBlocks = document.querySelectorAll('[data-bg]');
+    bgBlocks.forEach(item => {
+        item.insertAdjacentHTML('beforeend', `<div class="bg-item"></div>`)
+    })
 })
 
 

@@ -3,9 +3,13 @@
     line-height: 175%;
 }
 
+[data-bg] {
+    position: relative;
+    overflow: hidden;
+}
 
-.main-bg {
-    position: fixed;
+.bg-item {
+    position: absolute;
     top: -10%;
     left: 0;
     width: 100%;
@@ -48,7 +52,8 @@
     // .block-header_big
     &_big {
         .block-header__title {
-            @include adaptiveValue("font-size", 90,90 );
+            @include adaptiveValue("font-size", 90,70, 1100, 992, 1 );
+            // @include adaptiveValue("font-size", 90,50, 1100, $minWidth, 1 );
         }
     }
     // .block-header_left

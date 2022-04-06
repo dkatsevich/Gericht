@@ -18,24 +18,77 @@
 												<div class="block-header__sub-title">Chase the new Flavour</div>
 												<h2 class="block-header__title">The key to Fine dining</h2>
 											</div>
+											<div class="slide-main-slider__text">Sit tellus lobortis lorem sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </div>
+											<a href="" class="slide-main-slider__button button">Explore Menu</a>
+										</div>
+										<div class="slide-main-slider__img-ibg">
+											<img class="swiper-lazy" data-src="@img/home/main-slider/01.jpg" alt="Photo">
+										</div>
+									</div>
+									<div class="body-main-slider__slide swiper-slide slide-main-slider">
+										<div class="slide-main-slider__content">
+											<div class="slide-main-slider__header block-header block-header_big block-header_left">
+												<div class="block-header__sub-title">Chase the new Flavour</div>
+												<h2 class="block-header__title">The key to Fine dining</h2>
+											</div>
 											<div class="slide-main-slider__text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </div>
 											<a href="" class="slide-main-slider__button button">Explore Menu</a>
 										</div>
 										<div class="slide-main-slider__img-ibg">
-											<img src="@img/home/main-slider/01.jpg" alt="Photo">
+											<img class="swiper-lazy" data-src="@img/home/main-slider/02.jpg" alt="Photo">
 										</div>
 									</div>
+									<div class="body-main-slider__slide swiper-slide slide-main-slider">
+										<div class="slide-main-slider__content">
+											<div class="slide-main-slider__header block-header block-header_big block-header_left">
+												<div class="block-header__sub-title">Chase the new Flavour</div>
+												<h2 class="block-header__title">The key to Fine dining</h2>
+											</div>
+											<div class="slide-main-slider__text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </div>
+											<a href="" class="slide-main-slider__button button">Explore Menu</a>
+										</div>
+										<div class="slide-main-slider__img-ibg">
+											<img class="swiper-lazy" data-src="@img/home/main-slider/03.jpg" alt="Photo">
+										</div>
+									</div>
+									
 
 								</div>
-								<div class="body-main-slider__pagination">01 - 02 - 03</div>
+								<div class="body-main-slider__pagination"></div>
 						</div>
 						<nav class="main-slider__menu menu-main-slider">
 							<a href="" class="menu-main-slider__link menu-main-slider__link_current">#Gericht</a>
 							<a href="" class="menu-main-slider__link">#Bar</a>
 						</nav>
-						<button class="main-slider__scroll">Scroll</button>
+						<button data-goto=".about-mainpage" data-da=".body-main-slider,1400,1" class="main-slider__scroll">Scroll</button>
 					</div>
 				</section>
+				<div class="mainpage__body">
+					<section data-bg class="mainpage__about about-mainpage">
+						<div class="about-mainpage__container">
+							<div class="about-mainpage__content">
+								<div class="about-mainpage__title">About Us</div>
+								<div class="about-mainpage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</div>
+								<a href="" class="about-mainpage__button button">Know More</a>
+							</div>
+							<div class="about-mainpage__knife">
+								<!-- Different Images for Different Devices -->
+								
+								<!-- <img src="@img/home/knife.png" alt="Knife"> -->
+								<picture>
+									<source srcset="@img/home/knife-mob.png" media="(max-width: 768px)">
+									<source srcset="@img/home/knife.png">
+									<img src="@img/home/knife.png" alt="Knife">
+								  </picture>
+							</div>
+							<div class="about-mainpage__content">
+								<div class="about-mainpage__title">Our History</div>
+								<div class="about-mainpage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</div>
+								<a href="" class="about-mainpage__button button">Know More</a>
+							</div>
+						</div>
+					</section>
+				</div>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
